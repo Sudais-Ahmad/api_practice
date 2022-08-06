@@ -1,11 +1,12 @@
 import 'dart:async';
 import 'dart:convert';
 import 'package:api_practice/models/MoviesModle.dart';
-import 'package:api_practice/screens/getApi/movie_detail.dart';
 import 'package:api_practice/utility/constant_style.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:http/http.dart' as http;
+
+import 'movie_detail.dart';
 
 class MovieApi extends StatefulWidget {
   const MovieApi({Key? key}) : super(key: key);
@@ -54,6 +55,7 @@ class _MovieApiState extends State<MovieApi> {
       appBar: AppBar(
         title: const Text('Movie API'),
         centerTitle: true,
+        backgroundColor: Colors.grey[700],
       ),
       body: Padding(
         padding: const EdgeInsets.all(20),
